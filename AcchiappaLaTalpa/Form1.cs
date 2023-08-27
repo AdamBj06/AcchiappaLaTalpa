@@ -746,7 +746,7 @@ namespace AcchiappaLaTalpa
             await Task.Delay(TimeSpan.FromSeconds(0.1f));
             button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
             await Task.Delay(TimeSpan.FromSeconds(0.2f));
-            button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
             await Task.Delay(TimeSpan.FromSeconds(0.2f));
             button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
             await Task.Delay(TimeSpan.FromSeconds(0.2f));
