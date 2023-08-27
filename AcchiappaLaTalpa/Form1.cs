@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,32 +26,13 @@ namespace AcchiappaLaTalpa
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e) { }
-
         #region button_talpe
-        private async void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if(talpaLocation == "button1")
             {
                 label1.Text = Convert.ToString( int.Parse(label1.Text) + 100);
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button1);
             }
             else
             {
@@ -66,29 +47,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button2")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button2);
             }
             else
             {
@@ -103,29 +67,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button3")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button3);
             }
             else
             {
@@ -140,29 +87,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button4")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button4);
             }
             else
             {
@@ -177,29 +107,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button5")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button5);
             }
             else
             {
@@ -214,29 +127,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button6")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button6);
             }
             else
             {
@@ -251,29 +147,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button7_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button7")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button7);
             }
             else
             {
@@ -288,29 +167,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button8_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button8")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button8);
             }
             else
             {
@@ -325,29 +187,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button9_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button9")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button9);
             }
             else
             {
@@ -362,29 +207,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button10_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button10")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button10);
             }
             else
             {
@@ -399,29 +227,12 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
-        private async void button11_Click(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e)
         {
             if (talpaLocation == "button11")
             {
                 label1.Text = Convert.ToString(int.Parse(label1.Text) + 100);
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.1f));
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
-                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                Hit_Animation(button11);
             }
             else
             {
@@ -726,8 +537,9 @@ namespace AcchiappaLaTalpa
         }
         #endregion
 
-        private async void timer1_Tick(object sender, EventArgs e) {
-            if(label10.Text.Length >= 12)
+        private void timer1_Tick(object sender, EventArgs e) {
+            //Game Over
+            if (label10.Text.Length >= 12)
             {
                 sublabel10 = label10.Text.Substring(0, 13);
             }
@@ -769,6 +581,7 @@ namespace AcchiappaLaTalpa
                 label10.Text = "";
                 sublabel10 = "";
             }
+            //Score
             if (timer1.Interval == 1400) {
                 if (int.Parse(label5.Text) < int.Parse(label1.Text)) {
                     label5.Text = label1.Text;
@@ -782,6 +595,7 @@ namespace AcchiappaLaTalpa
                     label7.Text = label1.Text;
                 }
             }
+            //
             talpaLocation = "";
             button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa0f;
             button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa0f;
@@ -800,113 +614,47 @@ namespace AcchiappaLaTalpa
                 switch (n){
                     case 1:
                         talpaLocation = "button1";
-                        button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button1);
                         break;
                     case 2:
                         talpaLocation = "button2";
-                        button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button2);
                         break;
                     case 3:
                         talpaLocation = "button3";
-                        button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button3);
                         break;
                     case 4:
                         talpaLocation = "button4";
-                        button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button4);
                         break;
                     case 5:
                         talpaLocation = "button5";
-                        button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button5);
                         break;
                     case 6:
                         talpaLocation = "button6";
-                        button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button6);
                         break;
                     case 7:
                         talpaLocation = "button7";
-                        button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button7);
                         break;
                     case 8:
                         talpaLocation = "button8";
-                        button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button8);
                         break;
                     case 9:
                         talpaLocation = "button9";
-                        button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button9);
                         break;
                     case 10:
                         talpaLocation = "button10";
-                        button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button10);
                         break;
                     case 11:
                         talpaLocation = "button11";
-                        button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+                        Talpa_Animation(button11);
                         break;
                     default:
                         label1.Text = "Error1";
@@ -915,246 +663,37 @@ namespace AcchiappaLaTalpa
             } else if (n2==3){
                 switch (n){
                     case 1:
-                        button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));//hard
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));//medium
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));//easy
-                        }
+                        Bomba_Animation(button1);
                         break;
                     case 2:
-                        button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button2.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button2);
                         break;
                     case 3:
-                        button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button3.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button3);
                         break;
                     case 4:
-                        button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button4.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button4);
                         break;
                     case 5:
-                        button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button5.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button5);
                         break;
                     case 6:
-                        button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button6.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button6);
                         break;
                     case 7:
-                        button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button7.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button7);
                         break;
                     case 8:
-                        button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button8.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button8);
                         break;
                     case 9:
-                        button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button9.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button9);
                         break;
                     case 10:
-                        button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button10.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button10);
                         break;
                     case 11:
-                        button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                        await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        if (timer1.Interval == 1100 || timer1.Interval == 1400)
-                        {
-                            button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
-                        if (timer1.Interval == 1400)
-                        {
-                            button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                            button11.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
-                            await Task.Delay(TimeSpan.FromSeconds(0.2f));
-                        }
+                        Bomba_Animation(button11);
                         break;
                     default:
                         label1.Text = "Error2";
@@ -1162,5 +701,62 @@ namespace AcchiappaLaTalpa
                 }
             }
         }
+
+        #region Animations
+        private async void Talpa_Animation(Button button)
+        {
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa1f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa2f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa3f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpa4f;
+        }
+        private async void Bomba_Animation(Button button)
+        {
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba1f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba2f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));//hard
+            if (timer1.Interval == 1100 || timer1.Interval == 1400)
+            {
+                button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
+                await Task.Delay(TimeSpan.FromSeconds(0.2f));//medium
+            }
+            if (timer1.Interval == 1400)
+            {
+                button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba4f;
+                await Task.Delay(TimeSpan.FromSeconds(0.2f));
+                button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.bomba3f;
+                await Task.Delay(TimeSpan.FromSeconds(0.2f));//easy
+            }
+        }
+        private async void Hit_Animation(Button button)
+        {
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahammerf;
+            await Task.Delay(TimeSpan.FromSeconds(0.1f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit2f;
+            await Task.Delay(TimeSpan.FromSeconds(0.1f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpahit1f;
+            await Task.Delay(TimeSpan.FromSeconds(0.1f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy1f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button1.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy2f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpadizzy3f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint1f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint2f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+            button.BackgroundImage = AcchiappaLaTalpa.Properties.Resources.talpafaint3f;
+            await Task.Delay(TimeSpan.FromSeconds(0.2f));
+        }
+        #endregion
     }
 }
